@@ -7,8 +7,10 @@ environment:
   sdk: ^3.5.3
 
 dependencies:
+  countries_world_map: ^1.3.0
   flutter:
     sdk: flutter
+  get: ^4.6.6
 
 dev_dependencies:
   flutter_test:
@@ -18,5 +20,19 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
+  
+
   assets:
     - assets/logo.png
+    - assets/logo_colored.png
+    - assets/data.json
+  
+  fonts:
+    - family: IBMPLEX
+      fonts:
+        - asset: fonts/IBMPlexSansArabic-Regular.ttf
+          weight: 400
+        - asset: fonts/IBMPlexSansArabic-Light.ttf
+          weight: 200
+        - asset: fonts/IBMPlexSansArabic-Bold.ttf
+          weight: 600
