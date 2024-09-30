@@ -12,6 +12,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      title: "اليوم الوطني",
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Center(
@@ -23,7 +24,11 @@ class MainApp extends StatelessWidget {
                 child: Stack(
                   children: [
                     Container(color: const Color(0xFF00b4b3)),
-                    Center(child: Image.asset('logo.png')),
+                    Center(
+                        child: Image.asset(
+                      'images/logo.png',
+                      width: 1000,
+                    )),
                   ],
                 ),
               ),
@@ -95,7 +100,14 @@ class MainApp extends StatelessWidget {
                               ),
                             )),
                         const SizedBox(height: 20),
-                        const Text("Made By Mhmd & Hassn")
+                        const Text("Made By Hasan & Mhmd (CCSIT Students)",
+                            style: TextStyle(fontFamily: "IBMPLEX")),
+                        const SizedBox(height: 20),
+                        const Text(
+                          "Version 0.0.2",
+                          style: TextStyle(
+                              fontFamily: "IBMPLEX", color: Colors.grey),
+                        ),
                       ],
                     )),
                   ],

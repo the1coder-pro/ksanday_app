@@ -23,8 +23,8 @@ flutter:
   
 
   assets:
-    - assets/logo.png
-    - assets/logo_colored.png
+    - images/logo.png
+    - images/logo_colored.png
     - assets/data.json
   
   fonts:
